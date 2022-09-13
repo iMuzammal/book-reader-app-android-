@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/capture"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/uploadfragmentcontainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/uploadbooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Upload Books"
+
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/uploadbooks"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
+
+        </View>
+
+
+        <LinearLayout
+            android:id="@+id/bookidname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/uploadbooks"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:alpha=".4"
+            android:background="@drawable/uploadbooks">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/agenda" />
+
+            <EditText
+                android:id="@+id/entername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="80dp"
+                android:background="@android:color/transparent"
+                android:hint="Book Name:"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/writernameid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/bookidname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="70dp"
+            android:alpha=".4"
+            android:background="@drawable/uploadbooks">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/resume" />
+
+            <EditText
+
+
+                android:id="@+id/Writerid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/bookidname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="80dp"
+                android:background="@android:color/transparent"
+                android:hint="Writer Name:"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/priceidname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/writernameid"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="70dp"
+            android:alpha=".4"
+            android:background="@drawable/uploadbooks">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/coins" />
+
+            <EditText
+
+                android:id="@+id/priceid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/writernameid"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:hint="Price:"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <ImageView
+
+            android:id="@+id/imgview"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_below="@+id/priceidname"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/uploadidfile"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/priceidname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <Button
+
+                android:id="@+id/uploading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/priceid"
+                android:layout_marginTop="5dp"
+                android:alpha=".8"
+                android:background="@drawable/uploadbooks"
+                android:text="    upload Image ..    " />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/senddata"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="70dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btncolor"
+            android:onClick="btnupload"
+            android:text="    ADD Book     " />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
